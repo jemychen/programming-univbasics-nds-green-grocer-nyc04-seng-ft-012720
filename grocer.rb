@@ -39,7 +39,10 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   coupon_index = 0
   while coupon_index < coupons.length do
-    items = 
+    items = find_item_by_name_in_collection(coupons[coupon_index][:item],cart)
+    if items
+      item[:item]
+      
 end
 
 def apply_clearance(cart)
