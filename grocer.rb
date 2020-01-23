@@ -22,7 +22,7 @@ def consolidate_cart(cart)
     if cart[item_index[:item]] == cart[item_index[:item]]
       cart[item_index[:item]] += 0
     else cart[item_index[:item]]
-      cart[item_index[:item]] +=1
+      cart[item_index[:item]] += 1
     end
     item_index += 1
   end
