@@ -19,8 +19,10 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   item_index = 0
   while item_index < cart.length do
-    if cart[item_index[:item]]
-      cart[item_index[:count]] + 1
+    if cart[item_index[:item]] == cart[item_index[:item]]
+      cart[item_index[:item]] += 0
+    else cart[item_index[:item]]
+      cart[item_index[:item]] +=1
     end
     item_index += 1
   end
