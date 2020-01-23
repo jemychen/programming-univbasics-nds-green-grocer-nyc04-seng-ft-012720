@@ -37,7 +37,9 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  
+  coupon_index = 0
+  while coupon_index < coupons.length do
+    items = 
 end
 
 def apply_clearance(cart)
