@@ -24,7 +24,9 @@ def consolidate_cart(cart)
     if more_items
       more_items[:count] += 1
     else 
-      ingredients.push(cart[item_index])
+      current_item = cart[item_index]
+      current_item[:count] = 1
+      ingredients.push(current_item)
     end
     item_index += 1
   end
