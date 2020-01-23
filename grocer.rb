@@ -21,8 +21,10 @@ def consolidate_cart(cart)
   while item_index < cart.length do
     if cart[item_index[:item]]
       cart[item_index[:count]] + 1
-    else cart[item_index[:item]]
-      cart[item_index[:item]]
+    end
+    item_index += 1
+  end
+  return cart
 end
 
 def apply_coupons(cart, coupons)
