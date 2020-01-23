@@ -20,9 +20,10 @@ def consolidate_cart(cart)
   item_index = 0
   ingredients = []
   while item_index < cart.length do
-    if find_item_by_name_in_collection(cart[item_index][:item],ingredients)
-      next
-    else
+    more_items = find_item_by_name_in_collection(cart[item_index][:item],ingredients)
+    if more_items
+      more_items[:count] += 1
+    else 
       ingredients.push(cart[item_index])
     end
     item_index += 1
